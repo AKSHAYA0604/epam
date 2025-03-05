@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deserts - The Arid Lands</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #d9a760;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+        }
+        nav {
+            background: #804000;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 18px;
+        }
+        section {
+            padding: 20px;
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        footer {
+            background: #5c3b1e;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        
+        /* 🖨 PRINT-SPECIFIC STYLES */
+        @media print {
+            body {
+                font-size: 14px;
+                color: black;
+                background: white;
+            }
+            nav, #contact, footer { 
+                display: none; /* Hide unnecessary elements when printing */
+            }
+            img {
+                max-width: 300px; /* Reduce image size for printing */
+            }
+            table {
+                width: 100%;
+            }
+            h2 {
+                page-break-before: always; /* Force new sections to start on a new page */
+            }
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Deserts - The Arid Lands
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#types">Types of Deserts</a>
+        <a href="#climate">Climate & Features</a>
+        <a href="#wildlife">Wildlife</a>
+        <a href="#human">Human Adaptations</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Deserts</h2>
+        <p>Deserts are arid regions that receive less than 25 cm (10 inches) of rainfall annually. They cover about one-third of Earth's land surface. Despite harsh conditions, deserts support unique ecosystems and are home to various plants, animals, and human civilizations.</p>
+        <img src="https://t4.ftcdn.net/jpg/06/31/02/21/360_F_631022109_PXYXdWEMMa494E6dwHC0GSTvqSeHc3My.jpg" alt="A beautiful desert landscape">
+    </section>
+
+    <section id="types">
+        <h2>Types of Deserts</h2>
+        <table>
+            <tr>
+                <th>Desert Name</th>
+                <th>Type</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>Sahara</td>
+                <td>Hot Desert</td>
+                <td>Africa</td>
+            </tr>
+            <tr>
+                <td>Gobi</td>
+                <td>Cold Desert</td>
+                <td>Asia</td>
+            </tr>
+            <tr>
+                <td>Atacama</td>
+                <td>Coastal Desert</td>
+                <td>South America</td>
+            </tr>
+            <tr>
+                <td>Great Victoria Desert</td>
+                <td>Subtropical Desert</td>
+                <td>Australia</td>
+            </tr>
+        </table>
+        <section id="climate">
+            <h2>Climate & Features of Deserts</h2>
+            <p>Deserts are known for extreme temperatures, ranging from scorching heat during the day to freezing cold at night. The largest hot desert, the **Sahara**, can reach temperatures above 50°C (122°F), while cold deserts like the **Gobi** can drop below -40°C (-40°F).</p>
+            <p>Common features of deserts include sand dunes, rocky plateaus, dry riverbeds, and salt flats.</p>
+            <img src="https://www.worldatlas.com/r/w960-q80/upload/56/6e/75/shutterstock-1131095260.jpg" alt="Desert landscape with sand dunes">
+        </section>
+    </section>
+
+    <div class="page-break"></div>
+
+    
+
+    <section id="wildlife">
+        <h2>Wildlife in Deserts</h2>
+        <p>Despite harsh conditions, many animals thrive in deserts. Adaptations like water storage and nocturnal lifestyles help them survive.</p>
+        <ul>
+            <li>🦎 **Fennec Fox** – Large ears help dissipate heat.</li>
+            <li>🐍 **Sidewinder Snake** – Moves efficiently on loose sand.</li>
+            <li>🐪 **Camels** – Store fat in humps for energy.</li>
+            <li>🦂 **Scorpions** – Can survive without food for months.</li>
+        </ul>
+        <img src="https://www.treehugger.com/thmb/u9aQ9xxyDDHTzspX1an4lZXVZ4Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/pups_small2-f8a7b384ae1b40f9b3253e53a9c47b96.jpg" alt="Desert Wildlife">
+        <section id="human">
+            <h2>Human Adaptations to Deserts</h2>
+            <p>People living in deserts have developed unique ways to adapt:</p>
+            <ul>
+                <li>🏜 **Nomadic Lifestyle** – Many desert dwellers, like the **Tuareg** people, move with their livestock.</li>
+                <li>🌾 **Oasis Settlements** – Communities are built around **water sources**.</li>
+                <li>🏠 **Mud-Brick Houses** – Protect from extreme temperatures.</li>
+                <li>🛡 **Loose Clothing** – Reflects sunlight and keeps the body cool.</li>
+            </ul>
+            <p>Modern technology has also introduced **irrigation systems** to grow crops in desert environments.</p>
+        </section>
+    </section>
+
+    <div class="page-break"></div>
+    <footer>
+        &copy; 2025 Desert Awareness | All Rights Reserved
+    </footer>
+
+</body>
+</html>
